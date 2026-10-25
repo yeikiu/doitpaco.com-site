@@ -1,0 +1,85 @@
+/* Sol: cargar después del CSS base; sin cambios de copy, color ni animación. */
+.aurora{left:0;right:0}
+@media (max-width:960px){
+  nav a,.dlrow .u,.fbot a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
+  .hash button{min-width:44px;min-height:44px}
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0;gap:34px}
+  .hero>div,.brain>div,.install>div{min-width:0}
+  .win{width:100%;max-width:640px;margin-inline:auto}
+  .brain{grid-template-columns:minmax(0,1fr);gap:30px}
+}
+@media (max-width:760px){
+  .wrap{padding-inline:20px}
+  nav .wrap{height:auto;min-height:80px;flex-wrap:wrap;gap:12px;padding-block:16px}
+  nav .logo{flex:none;min-height:44px}
+  nav .logo img{height:40px;width:auto;min-width:120px}
+  nav .sp{display:none}
+  nav a.l{display:none}
+  nav a.l[data-i18n="nav.lang"]{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:8px;margin-left:auto;flex:none}
+  nav .btn{display:flex;align-items:center;justify-content:center;min-height:44px;flex-basis:100%;padding:12px 18px;text-align:center}
+  .hero{padding-top:20px;padding-bottom:40px}
+  h1{font-size:clamp(40px,8vw,54px);line-height:1.04;overflow-wrap:anywhere}
+  h2{font-size:clamp(32px,6vw,46px);overflow-wrap:anywhere}
+  .kicker{max-width:100%;line-height:1.5}
+  .sub{font-size:18px}
+  .ctas{gap:12px;margin-top:26px}
+  .ctas .cta,.ctas .ghost,.dlrow .cta{width:100%;justify-content:center;text-align:center;min-height:44px;padding:16px 18px}
+  .cta>span{min-width:0;overflow-wrap:anywhere}
+  .ghost{display:flex;align-items:center}
+  .body{padding:18px}
+  .me{padding:14px;gap:10px;font-size:17px}
+  .wave,.stp b{flex:none}
+  .me>span,.stp>span,.paco p{min-width:0;overflow-wrap:anywhere}
+  .stp{margin-left:0;align-items:flex-start;line-height:1.5}
+  .paco{gap:10px}
+  .paco p{padding:12px;font-size:16px;line-height:1.5}
+  .wa .m{max-width:100%;overflow-wrap:anywhere}
+  .acro{padding:48px 0 24px}
+  .letters{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .lt{padding:24px 10px;border-radius:20px;min-width:0}
+  .lt b{font-size:clamp(56px,10vw,76px)}
+  .lt span{font-size:16px;overflow-wrap:anywhere}
+  .acro .lead{font-size:18px;margin-top:24px}
+  .say{margin-top:24px;gap:10px}
+  .say span{max-width:100%;padding:10px 14px;font-size:16px;overflow-wrap:anywhere}
+  section{padding:72px 0}
+  .bento{grid-template-columns:minmax(0,1fr);gap:14px;margin-top:32px}
+  .tile.w4,.tile.w2,.tile.w3{grid-column:auto}
+  .tile{padding:24px;min-height:0}
+  .tile h3{font-size:23px;overflow-wrap:anywhere}
+  .tile p{overflow-wrap:anywhere}
+  .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .logos div{padding:20px 10px;font-size:20px;overflow-wrap:anywhere}
+  .dl{padding:28px 20px;border-radius:24px}
+  .spec{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-block:26px}
+  .spec div{min-width:0;padding:14px}
+  .spec dd{font-size:17px;overflow-wrap:anywhere}
+  .hash{flex-wrap:wrap;gap:12px;padding:14px}
+  .hash>span{min-width:0;max-width:100%;overflow-wrap:anywhere}
+  .hash button{min-width:44px;min-height:44px;padding:10px 14px}
+  .dlrow{gap:12px;margin-top:24px}
+  .dlrow .u,.fbot a{display:inline-flex;align-items:center;min-height:44px;overflow-wrap:anywhere}
+  .install{grid-template-columns:minmax(0,1fr);gap:28px;margin-top:28px}
+  .st{gap:14px}
+  .st>div{min-width:0}
+  .st p{overflow-wrap:anywhere}
+  .orb{max-width:320px}
+  .final{padding:80px 0}
+  .final h2{font-size:clamp(38px,8vw,60px)}
+  .final .cta,.fbrand .cta{max-width:100%;min-height:44px;padding:16px 18px}
+  footer{padding:48px 0 28px}
+  .fbrand{gap:24px;padding-bottom:28px}
+  .fbrand>div{min-width:0;max-width:100%}
+  .fbrand .logo img{height:48px;max-width:100%;width:auto}
+  .fbrand .tag{font-size:clamp(38px,8vw,60px);overflow-wrap:anywhere}
+  .fbrand .claim{line-height:1.5}
+  .fbot{gap:8px 18px;padding-top:20px}
+  .fbot .sp,.fbot .dot{display:none}
+}
+@media (max-width:360px){
+  .wrap{padding-inline:16px}
+  .body{padding:14px}
+  .spec{grid-template-columns:minmax(0,1fr)}
+  .orb .core b{font-size:26px}
+  .orb .core .r{font-size:16px}
+}

@@ -1,0 +1,29 @@
+/* doitpaco.com v2 · animación (Fable)
+   Sobria: entradas al hacer scroll, sin cambiar paleta ni layout.
+   Se enlaza DESPUÉS del CSS base. */
+
+/* Desplazamiento suave en los anclas del menú */
+html{scroll-behavior:smooth}
+
+/* Hovers que en la v1 cambiaban de golpe */
+nav a.l,.ghost,.fbot a,.u{transition:color .15s,background-color .15s,border-color .15s,transform .15s}
+.ghost:hover{transform:translateY(-1px)}
+
+/* Demo de portada: corrige el solape de la v1 (la tarjeta de WhatsApp entraba a la vez que el tercer paso) */
+.wa{animation-delay:3s}
+.paco{animation-delay:3.7s}
+
+/* Revelado al hacer scroll: la clase .rv la pone animacion.js, así que sin JS nada queda oculto */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* Quien pide menos movimiento: todo quieto y visible desde el primer instante */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .stp,.paco,.wa,.lt{animation:none!important;opacity:1!important;transform:none!important}
+  .wave span{animation:none!important;height:14px}
+  .orb:before{animation:none!important;transform:none;opacity:.85}
+  .cta,.ghost,nav a.l,.fbot a,.u{transition:none}
+  .cta:hover,.ghost:hover{transform:none}
+}

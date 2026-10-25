@@ -1,0 +1,139 @@
+{
+  "status": "logo-final-aprobado",
+  "decision": "SL1 con corbata C1 (nudo separado + pala de punta afilada), elegido por el dueño el 2026-10-06; color K1 coral",
+  "geometry": "Solapas de SL1 sin cambios; corbata sustituida por C1",
+  "root_id": "87baad83-2a8b-4576-aded-c49efbcc870d",
+  "files": [
+    {
+      "path": "assets/brand/apple-touch-icon.png",
+      "bytes": 5243,
+      "sha256": "2b4f5c4c83829d4e865506b1db4bb02471b48949e10903192029b9cb85649f84"
+    },
+    {
+      "path": "assets/brand/favicon.ico",
+      "bytes": 4404,
+      "sha256": "509c419037582f6b2cf8d253751e7ec8aaa473f9688fc9c88979b11362cc0a46"
+    },
+    {
+      "path": "assets/brand/favicon.png",
+      "bytes": 15897,
+      "sha256": "de72a8a89c82ff1bc44413cb73d1ed8f1ec4c333a4f96e80f190323b5b6cf5e5"
+    },
+    {
+      "path": "assets/brand/favicon.svg",
+      "bytes": 483,
+      "sha256": "535df2689277416acc6b3b7155b29454c7adc1b5c899c8e94542a5a59854c44f"
+    },
+    {
+      "path": "assets/brand/paco-app-icon.png",
+      "bytes": 15897,
+      "sha256": "de72a8a89c82ff1bc44413cb73d1ed8f1ec4c333a4f96e80f190323b5b6cf5e5"
+    },
+    {
+      "path": "assets/brand/paco-app-icon.svg",
+      "bytes": 483,
+      "sha256": "535df2689277416acc6b3b7155b29454c7adc1b5c899c8e94542a5a59854c44f"
+    },
+    {
+      "path": "assets/brand/paco-icon-128.png",
+      "bytes": 3658,
+      "sha256": "c39f7892b41ac3bda6f94e9ebff2651346bfac9704509c361db402697f0cf829"
+    },
+    {
+      "path": "assets/brand/paco-icon-16.png",
+      "bytes": 495,
+      "sha256": "c6cbbf04fc9b74694bb0c6cf370418570f73c6401162fad2fc6bfb53b66a668d"
+    },
+    {
+      "path": "assets/brand/paco-icon-180.png",
+      "bytes": 5243,
+      "sha256": "2b4f5c4c83829d4e865506b1db4bb02471b48949e10903192029b9cb85649f84"
+    },
+    {
+      "path": "assets/brand/paco-icon-192.png",
+      "bytes": 5511,
+      "sha256": "6bb39c7c584c537a2ba1c5eea5da7296f5f669c8e214358d1f2c39e3097d7175"
+    },
+    {
+      "path": "assets/brand/paco-icon-256.png",
+      "bytes": 7373,
+      "sha256": "2dcb88dadd140b49da1c206b45f73e8d7425cc29c28aa965377f1ee550e6b1ce"
+    },
+    {
+      "path": "assets/brand/paco-icon-32.png",
+      "bytes": 940,
+      "sha256": "65ea4e5a7cb310f69f1bb477949e3ac8249a354efaaaeb629eb5bcfd8116b511"
+    },
+    {
+      "path": "assets/brand/paco-icon-48.png",
+      "bytes": 1334,
+      "sha256": "2f90864b5f37e2017fe92cf84f828c89394673ced49dd6199b365d67d1755aa7"
+    },
+    {
+      "path": "assets/brand/paco-icon-512.png",
+      "bytes": 15897,
+      "sha256": "de72a8a89c82ff1bc44413cb73d1ed8f1ec4c333a4f96e80f190323b5b6cf5e5"
+    },
+    {
+      "path": "assets/brand/paco-icon-64.png",
+      "bytes": 1792,
+      "sha256": "a304ccf3798bc91fce62ba0b9af7a1377c03cf2b3f2ec16adeffe0f16c4483ac"
+    },
+    {
+      "path": "assets/brand/paco-logo-on-dark.png",
+      "bytes": 25581,
+      "sha256": "43e8243919ccc0cbd547672c3247d62e5af25ccbb8a0ea56335218cf0e9c5e99"
+    },
+    {
+      "path": "assets/brand/paco-logo-on-dark.svg",
+      "bytes": 1082,
+      "sha256": "b0c61824d0a39d90912d594e7bb52dcef25d0bda5bf75f68504f15bf7ec00e98"
+    },
+    {
+      "path": "assets/brand/paco-logo-on-light.png",
+      "bytes": 26767,
+      "sha256": "31784ee285bcaeb92b2fe7362f551380447a6f1ddcd92cfefd12d4a33f685af0"
+    },
+    {
+      "path": "assets/brand/paco-logo-on-light.svg",
+      "bytes": 1082,
+      "sha256": "7d267b3926e99eb876a3e8e9590109ab1be24da888daa4987b2a63b45a806578"
+    },
+    {
+      "path": "assets/brand/paco-symbol-monochrome.png",
+      "bytes": 18023,
+      "sha256": "9829015467d22bd7aa9ce215a5a5453b749d9bee6ecbe5aef012936901e82203"
+    },
+    {
+      "path": "assets/brand/paco-symbol-monochrome.svg",
+      "bytes": 429,
+      "sha256": "db871c833d08df7e85f91fbcd4713f47951d244819885807ec0eee2255413e70"
+    },
+    {
+      "path": "assets/brand/paco-symbol-on-dark.png",
+      "bytes": 22479,
+      "sha256": "67fb4e353de21da0a49638f480158e5a517dc12b1fecd100d35ce8697528fa8f"
+    },
+    {
+      "path": "assets/brand/paco-symbol-on-dark.svg",
+      "bytes": 419,
+      "sha256": "a0fd4426585ceadb98eaa310d0b4c2958fa832c97e24cc59a6fa36a8741653d9"
+    },
+    {
+      "path": "assets/brand/paco-symbol-on-light.png",
+      "bytes": 23220,
+      "sha256": "74b4be8ea98dbf2590a4f5c1765ead223d0f8e8a5027ba567cccbb5ec36044cc"
+    },
+    {
+      "path": "assets/brand/paco-symbol-on-light.svg",
+      "bytes": 419,
+      "sha256": "bcbdd46aa37bf075498fa6dbdc5faf1cbcd375dcc68dfafa71044c550e0a5aa1"
+    },
+    {
+      "path": "assets/brand/paco.ico",
+      "bytes": 29185,
+      "sha256": "d18a460fdd3af51aa2714f8eac0c6f19a7d8790315f121fe7fe7b09fef825ad2"
+    }
+  ],
+  "tie_path": "M118 100H142L138 120H122Z M123 124H137L147 184L130 204L113 184Z"
+}
