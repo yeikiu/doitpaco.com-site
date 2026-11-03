@@ -170,6 +170,12 @@
   .orb .core .r{display:block;margin-top:6px;color:var(--mute);font-size:18px}
   .orb .wave{justify-content:center;margin-top:8px}
   @keyframes breathe{0%,100%{transform:scale(.92);opacity:.7}50%{transform:scale(1.06);opacity:1}}
+  .tile .cta{display:inline-flex;margin-top:22px}
+  .tile .badge{display:inline-block;font-size:13px;font-weight:700;color:var(--a);border:1px solid var(--a-line);border-radius:999px;padding:4px 12px;margin-bottom:14px}
+  .tile ul.req{list-style:none;padding:0;margin:0;color:var(--mute);line-height:1.55}
+  .tile ul.req li{padding-left:22px;position:relative;margin:6px 0}
+  .tile ul.req li:before{content:"\2713";position:absolute;left:0;color:var(--a)}
+  .tile a.more{color:var(--a);font-weight:700;display:inline-block;margin-top:14px}
   .final{text-align:center;padding:140px 0;position:relative;overflow:hidden}
   .final:before{content:"";position:absolute;inset:20% 15%;background:radial-gradient(50% 50% at 50% 50%,rgba(255,122,89,.18),transparent 70%);filter:blur(30px);z-index:-1}
   .final h2{font-size:clamp(46px,7vw,100px)}
@@ -219,7 +225,7 @@
 <div class="aurora"></div>
 <nav><div class="wrap">
   <a class="logo" href="#" aria-label="PACO"><img src="assets/brand/paco-logo-on-dark.svg" alt="PACO"></a><span class="sp"></span>
-  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a>
+  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
   <a class="l" data-i18n="nav.lang" href="?lang=es" data-i18n-href="nav.lang_href">Español</a>
 </div></nav>
 
@@ -228,7 +234,7 @@
     <div>
       <span class="kicker" data-i18n="acro.kicker">PACO = Personal Assistant, Computer Operator</span>
       <h1 id="h1" data-i18n="hero.title">Say it. PACO does it.</h1>
-      <p class="sub" data-i18n="hero.sub">PACO lives on your PC. You talk, and it uses your computer just like you would: your mouse, your keyboard, your screen. Only what you allow.</p>
+      <p class="sub" data-i18n="hero.sub">PACO lives on your PC and has hands. You talk, and it operates your computer and your Android phone just like you would: windows, programs with no API, calls, WhatsApp. With the AI you already pay for, and only what you allow.</p>
       <div class="ctas"><a class="cta" href="#features" data-i18n="hero.secondary">See what it does</a></div>
     </div>
     <div class="win">
@@ -313,23 +319,33 @@
     <div class="tile w4 hot"><div class="ico">🎙️</div><h3 data-i18n="f1.title">Talk to it like a person</h3><p data-i18n="f1.text">Wake it by saying its name. It follows you even when you ramble, and you can cut it off mid-sentence. Its voice is generated on your own PC.</p></div>
     <div class="tile w2"><div class="ico">🖱️</div><h3 data-i18n="f2.title">Your computer, as if it were you</h3><p data-i18n="f2.text">Sees your screen and uses your mouse and keyboard: clicks, types and chains steps until the job is done. Only with the access you give it.</p></div>
     <div class="tile w2"><div class="ico">💬</div><h3 data-i18n="f3.title">WhatsApp, Gmail and Calendar</h3><p data-i18n="f3.text">Reads and writes your messages, searches and drafts emails, adds and reschedules appointments. With your account, whenever you want.</p></div>
-    <div class="tile w2"><div class="ico">📱</div><h3 data-i18n="f4.title">Soon: your phone</h3><p data-i18n="f4.text">We are testing phone control so PACO can tap, type and open apps for you. It will arrive in a future update, and only if you give it access.</p></div>
+    <div class="tile w2"><div class="ico">📱</div><h3 data-i18n="f4.title">Your Android phone</h3><p data-i18n="f4.text">Over cable or Wi-Fi: it taps, types, opens apps, calls from your SIM, uses the WhatsApp app and reads your notifications. Only if you give it access.</p></div>
     <div class="tile w2"><div class="ico">⏰</div><h3 data-i18n="f5.title">Remembers and keeps watch</h3><p data-i18n="f5.text">Keeps what you ask it to, sets reminders and reacts when something happens: when you're back at the PC or a WhatsApp comes in.</p></div>
     <div class="tile w3"><div class="ico">📊</div><h3 data-i18n="f6.title">Everything in sight</h3><p data-i18n="f6.text">A panel on your PC and your phone showing what it's doing, what's scheduled and how each task is going.</p></div>
-    <div class="tile w3 hot brainbox"><h3 data-i18n="brain.title">Thinks with your own AI</h3><p data-i18n="brain.text">PACO runs on your own AI: sign in with your Claude or ChatGPT account, use your own API key, or run local models. Nothing bundled, nothing resold.</p><p class="note" data-i18n="brain.local">Your memory, reminders and connections are stored on your PC, not on a server of ours.</p></div>
+    <div class="tile w3 hot brainbox"><h3 data-i18n="brain.title">With the AI you already pay for</h3><p data-i18n="brain.text">Your Claude or ChatGPT account, your own API key (Anthropic, OpenAI, GLM…) or local models. Nothing bundled, nothing resold: the code is free and you pay your AI provider directly.</p><p class="note" data-i18n="brain.local">Your memory, reminders and connections are stored on your PC, not on a server of ours.</p></div>
+  </div>
+</div></section>
+
+<section id="consulting"><div class="wrap">
+  <div class="center"><h2 data-i18n="consult.title">I'm an AI consultant: book 30 or 50 min with me</h2><p class="lead" data-i18n="consult.sub">I work in English and Spanish, with clients anywhere. You decide what the block is for: installing PACO, learning to use it, building an automation or any AI question. Video call on Google Meet.</p></div>
+  <div class="bento">
+    <div class="tile w3"><div class="ico">⏱️</div><h3 data-i18n="consult.b30.title">30 min · €90</h3><p data-i18n="consult.b30.text">For a specific question or a quick fix. Paid when you book.</p><a class="cta" href="https://cal.com/jqdevai/30min" target="_blank" rel="noopener" data-i18n="consult.b30.cta">Book 30 min</a></div>
+    <div class="tile w3 hot"><span class="badge" data-i18n="consult.b50.badge">Recommended for a first session</span><h3 data-i18n="consult.b50.title">50 min · €150</h3><p data-i18n="consult.b50.text">To install PACO together or build your first automation. Paid when you book.</p><a class="cta" href="https://cal.com/jqdevai/50min" target="_blank" rel="noopener" data-i18n="consult.b50.cta">Book 50 min</a></div>
+    <div class="tile w4"><h3 data-i18n="consult.req.title">If it's for PACO, you need</h3><ul class="req"><li data-i18n="consult.req.1">A Windows 10 or 11 PC (64-bit)</li><li data-i18n="consult.req.2">An Android phone</li><li data-i18n="consult.req.3">An active subscription to a supported AI provider (Anthropic, OpenAI, GLM or others)</li></ul></div>
+    <div class="tile w2"><p data-i18n="consult.fine">You pay for the time, not an outcome: if you need more help later, book another block.</p><p class="note" data-i18n="consult.hours">Weekday evenings and weekends (European time).</p><a class="more" href="https://cal.com/jqdevai" target="_blank" rel="noopener" data-i18n="consult.all">See all times</a></div>
   </div>
 </div></section>
 
 <section class="final"><div class="wrap">
   <h2 data-i18n="final.title">Stop clicking. Just say it.</h2>
-    <p class="lead" data-i18n="final.note">Free beta for Windows 10 and 11 (64-bit).</p>
+    <p class="lead" data-i18n="final.note">PACO is free. Beta for Windows 10 and 11 (64-bit).</p>
 </div></section>
 
 <footer><div class="wrap">
   <div class="fbrand">
     <div><a class="logo" href="#" aria-label="PACO"><img src="assets/brand/paco-logo-on-dark.svg" alt="PACO"></a>
       <div class="tag" id="tag" data-i18n="footer.tagline">Do it, Paco.</div>
-      <p class="claim" data-i18n="footer.claim">Your personal assistant. Your computer, at your command.</p></div>
+      <p class="claim" data-i18n="footer.claim">Your personal assistant. Your computer and your phone, at your command.</p></div>
   </div>
   <div class="fbot"><span>© 2026 <a href="https://github.com/yeikiu" rel="author">yeikiu</a></span><span class="dot">·</span><span data-i18n="footer.made">Designed and built in the Canary Islands</span><span class="sp"></span>
     <a href="license.html" data-i18n="footer.license">License</a><a href="privacy.html" data-i18n="footer.privacy">Privacy</a><a href="terms.html" data-i18n="footer.terms">Terms</a><a href="mailto:hola@doitpaco.com" data-i18n="footer.contact">hola@doitpaco.com</a></div>
