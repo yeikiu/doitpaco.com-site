@@ -112,7 +112,7 @@ window.PACO_I18N.en = {
   "f6.text": "A panel on your PC and your phone showing what it's doing, what's scheduled and how each task is going.",
 
   "brain.title": "With the AI you already pay for",
-  "brain.text": "Your Claude or ChatGPT account, your own API key (Anthropic, OpenAI, GLM…) or local models. Nothing bundled, nothing resold: the code is free and you pay your AI provider directly.",
+  "brain.text": "Your Claude or ChatGPT account, your own API key (Anthropic, OpenAI, GLM…) or local models. Nothing bundled, nothing resold: the code is free for personal use and you pay your AI provider directly.",
   "brain.local": "Your memory, reminders and connections are stored on your PC, not on a server of ours.",
 
 
@@ -134,7 +134,7 @@ window.PACO_I18N.en = {
   "consult.fine": "You pay for the time, not an outcome: if you need more help later, book another block.",
   "consult.hours": "Weekday evenings and weekends (European time).",
   "consult.all": "See all times",
-  "final.note": "PACO is free. Beta for Windows 10 and 11 (64-bit).",
+  "final.note": "PACO is free for personal use. Beta for Windows 10 and 11 (64-bit).",
 
   "footer.tagline": "Do it, Paco.",
   "footer.claim": "Your personal assistant. Your computer and your phone, at your command.",
