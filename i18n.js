@@ -12,6 +12,10 @@
     var v = dict[el.getAttribute("data-i18n")];
     if (v !== undefined) el.textContent = v;
   });
+  document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+    var v = dict[el.getAttribute("data-i18n-ph")];
+    if (v !== undefined) el.setAttribute("placeholder", v);
+  });
   document.querySelectorAll("[data-i18n-href]").forEach(function (el) {
     el.setAttribute("href", dict[el.getAttribute("data-i18n-href")]);
   });

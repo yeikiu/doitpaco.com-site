@@ -3,6 +3,34 @@
 // [PENDIENTE] = dato que se rellena al empaquetar la versión.
 window.PACO_I18N = window.PACO_I18N || {};
 window.PACO_I18N.es = {
+  "nav.beta": "Beta",
+  "hero.primary": "Apúntate a la beta",
+  "final.cta": "Apúntate a la beta",
+  "beta.title": "Sé de los primeros en probarlo",
+  "beta.sub": "La beta está a punto. Déjanos tu email y te avisamos el día que abra.",
+  "beta.email": "Email",
+  "beta.email_ph": "tu@email.com",
+  "beta.for": "Lo quiero para",
+  "beta.for_me": "Uso personal",
+  "beta.for_biz": "Mi empresa",
+  "beta.os": "Tu ordenador",
+  "beta.company": "Empresa",
+  "beta.size": "Tamaño del equipo",
+  "beta.pick": "Elige…",
+  "beta.size_big": "Más de 250",
+  "beta.role": "Tu cargo",
+  "beta.optional": "(opcional)",
+  "beta.want": "¿Qué te gustaría que PACO hiciera por ti?",
+  "beta.src": "¿Cómo nos conociste?",
+  "beta.src_other": "Otro",
+  "beta.consent": "Acepto que me escribáis para avisarme de la beta de PACO. Puedo darme de baja cuando quiera.",
+  "beta.privacy": "Privacidad",
+  "beta.cta": "Avisadme",
+  "beta.done": "¡Ya estás en la lista!",
+  "beta.done_sub": "Te escribiremos el día que abra la beta.",
+  "beta.err_email": "Revisa tu email.",
+  "beta.err_pick": "Elige una opción en cada pregunta.",
+  "beta.err_ok": "Marca la casilla para que podamos escribirte.",
   "meta.title": "PACO — Personal Assistant, Computer Operator",
   "nav.video": "Vídeo",
   "nav.features": "Qué hace",
@@ -117,5 +145,5 @@ window.PACO_I18N.es = {
   "footer.license": "Licencia",
   "footer.privacy": "Privacidad",
   "footer.terms": "Condiciones",
-  "footer.contact": "hola@doitpaco.com"
+  "footer.contact": "contact@doitpaco.com"
 };

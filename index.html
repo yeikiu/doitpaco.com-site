@@ -217,6 +217,28 @@
     .mk.room{min-height:230px}
     .film.portrait video{aspect-ratio:9/16}
   }
+  /* Lista de espera de la beta: formulario propio que envía a un Google Form (hoja en jqdevai) por un iframe oculto */
+  .ctas a.more{color:var(--a);font-weight:700}
+  .wl{max-width:760px;margin:56px auto 0;background:linear-gradient(180deg,var(--a-soft),transparent 70%),var(--surf);border:1px solid var(--a-line);border-radius:24px;padding:36px}
+  .wl .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .wl label{display:block;font-size:14px;font-weight:700;margin:16px 0 8px}
+  .wl label small{color:var(--mute);font-weight:500}
+  .wl input[type=email],.wl input[type=text],.wl select,.wl textarea{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--gl);border-radius:12px;padding:14px 16px;font:inherit;font-size:16px}
+  .wl textarea{min-height:84px;resize:vertical}
+  .wl input:focus,.wl select:focus,.wl textarea:focus{outline:none;border-color:var(--a)}
+  .wl .seg{display:flex;gap:10px;flex-wrap:wrap}
+  .wl .seg label{margin:0;font-weight:600;border:1px solid var(--gl);border-radius:999px;padding:10px 18px;cursor:pointer;background:var(--bg);position:relative}
+  .wl .seg input{position:absolute;opacity:0;pointer-events:none}
+  .wl .seg label:has(input:checked){border-color:var(--a);background:var(--a-soft);color:var(--a)}
+  .wl .biz{display:none}.wl.is-biz .biz{display:block}
+  .wl .ok{display:flex;gap:12px;align-items:flex-start;margin-top:20px;font-size:14px;color:var(--mute);line-height:1.5;font-weight:500}
+  .wl .ok input{margin-top:3px;accent-color:var(--a);width:18px;height:18px;flex:none}
+  .wl .ok a{color:var(--a)}
+  .wl button.cta{border:0;cursor:pointer;margin-top:24px;font:inherit;font-weight:700;font-size:18px}
+  .wl .done{display:none;text-align:center;font-size:24px;padding:30px 0}
+  .wl.sent form{display:none}.wl.sent .done{display:block}
+  .wl .err{color:var(--a);margin-top:12px;font-size:14px;min-height:1em}
+  @media (max-width:760px){.wl{padding:24px}.wl .row{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="mobile.css">
 <link rel="stylesheet" href="animacion.css">
@@ -225,7 +247,7 @@
 <div class="aurora"></div>
 <nav><div class="wrap">
   <a class="logo" href="#" aria-label="PACO"><img src="assets/brand/paco-logo-on-dark.svg" alt="PACO"></a><span class="sp"></span>
-  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
+  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#beta" data-i18n="nav.beta">Beta</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
   <a class="l" data-i18n="nav.lang" href="?lang=es" data-i18n-href="nav.lang_href">Español</a>
 </div></nav>
 
@@ -235,7 +257,7 @@
       <span class="kicker" data-i18n="acro.kicker">PACO = Personal Assistant, Computer Operator</span>
       <h1 id="h1" data-i18n="hero.title">Say it. PACO does it.</h1>
       <p class="sub" data-i18n="hero.sub">PACO lives on your PC and has hands. You talk, and it operates your computer and your Android phone just like you would: windows, programs with no API, calls, WhatsApp. With the AI you already pay for, and only what you allow.</p>
-      <div class="ctas"><a class="cta" href="#features" data-i18n="hero.secondary">See what it does</a></div>
+      <div class="ctas"><a class="cta" href="#beta" data-i18n="hero.primary">Join the beta list</a><a class="more" href="#features" data-i18n="hero.secondary">See what it does</a></div>
     </div>
     <div class="win">
       <div class="bar"><i></i><i></i><i></i><img src="assets/brand/paco-symbol-on-dark.svg" alt=""><span>PACO</span></div>
@@ -326,6 +348,44 @@
   </div>
 </div></section>
 
+<!-- Lista de espera: envía al Google Form «Lista de espera beta PACO» de jqdevai@gmail.com (data-gform = id público; name="entry.N" = sus preguntas). Las respuestas caen en la hoja «Lista de espera beta PACO (respuestas)». -->
+<section id="beta"><div class="wrap">
+  <div class="center"><h2 data-i18n="beta.title">Be the first to try it</h2><p class="lead" data-i18n="beta.sub">The beta is almost here. Leave your email and we'll let you know the day it opens.</p></div>
+  <div class="wl" id="wl" data-gform="1FAIpQLScywiFZkGn81nySdoyY_Z5V83rZpZWSXGdHYbaCRarA0JAcbA">
+    <form id="wlf" method="POST" target="wl-sink" novalidate>
+      <label for="wl-email" data-i18n="beta.email">Email</label>
+      <input id="wl-email" type="email" name="entry.88119851" required autocomplete="email" data-i18n-ph="beta.email_ph" placeholder="you@example.com">
+      <label data-i18n="beta.for">I want it for</label>
+      <div class="seg">
+        <label><input type="radio" name="entry.1921574103" value="Uso personal" required><span data-i18n="beta.for_me">Personal use</span></label>
+        <label><input type="radio" name="entry.1921574103" value="Mi empresa"><span data-i18n="beta.for_biz">My company</span></label>
+      </div>
+      <label data-i18n="beta.os">Your computer</label>
+      <div class="seg">
+        <label><input type="radio" name="entry.571314553" value="Windows" required><span>Windows</span></label>
+        <label><input type="radio" name="entry.571314553" value="macOS"><span>macOS</span></label>
+        <label><input type="radio" name="entry.571314553" value="Linux"><span>Linux</span></label>
+      </div>
+      <div class="biz"><div class="row">
+        <div><label for="wl-co" data-i18n="beta.company">Company</label><input id="wl-co" type="text" name="entry.1214570344" autocomplete="organization"></div>
+        <div><label for="wl-size" data-i18n="beta.size">Team size</label>
+          <select id="wl-size" name="entry.1509263418"><option value="" data-i18n="beta.pick">Choose…</option><option value="1-10">1–10</option><option value="11-50">11–50</option><option value="51-250">51–250</option><option value="250+" data-i18n="beta.size_big">More than 250</option></select></div>
+      </div>
+        <label for="wl-role"><span data-i18n="beta.role">Your role</span> <small data-i18n="beta.optional">(optional)</small></label><input id="wl-role" type="text" name="entry.1632281851" autocomplete="organization-title"></div>
+      <label for="wl-want"><span data-i18n="beta.want">What would you like PACO to do for you?</span> <small data-i18n="beta.optional">(optional)</small></label>
+      <textarea id="wl-want" name="entry.1026996514" maxlength="600"></textarea>
+      <label for="wl-src"><span data-i18n="beta.src">How did you hear about us?</span> <small data-i18n="beta.optional">(optional)</small></label>
+      <select id="wl-src" name="entry.1188494587"><option value="" data-i18n="beta.pick">Choose…</option><option>Instagram</option><option>LinkedIn</option><option>Twitch</option><option value="Otro" data-i18n="beta.src_other">Other</option></select>
+      <input type="hidden" name="entry.2130367416" id="wl-lang">
+      <label class="ok"><input type="checkbox" id="wl-ok" required><span><span data-i18n="beta.consent">I agree to be emailed about the PACO beta. I can unsubscribe at any time.</span> <a href="privacy.html" data-i18n="beta.privacy">Privacy</a></span></label>
+      <button class="cta" type="submit" data-i18n="beta.cta">Notify me</button>
+      <div class="err" id="wl-err" aria-live="polite"></div>
+    </form>
+    <div class="done" aria-live="polite"><b data-i18n="beta.done">You're on the list!</b><p class="lead" data-i18n="beta.done_sub">We'll email you the day the beta opens.</p></div>
+    <iframe name="wl-sink" title="" hidden></iframe>
+  </div>
+</div></section>
+
 <section id="consulting"><div class="wrap">
   <div class="center"><h2 data-i18n="consult.title">I'm an AI consultant: book 30 or 50 min with me</h2><p class="lead" data-i18n="consult.sub">I work in English and Spanish, with clients anywhere. You decide what the block is for: installing PACO, learning to use it, building an automation or any AI question. Video call on Google Meet.</p></div>
   <div class="bento">
@@ -339,6 +399,7 @@
 <section class="final"><div class="wrap">
   <h2 data-i18n="final.title">Stop clicking. Just say it.</h2>
     <p class="lead" data-i18n="final.note">PACO is free. Beta for Windows 10 and 11 (64-bit).</p>
+    <a class="cta" href="#beta" data-i18n="final.cta">Join the beta list</a>
 </div></section>
 
 <footer><div class="wrap">
@@ -348,7 +409,7 @@
       <p class="claim" data-i18n="footer.claim">Your personal assistant. Your computer and your phone, at your command.</p></div>
   </div>
   <div class="fbot"><span>© 2026 <a href="https://github.com/yeikiu" rel="author">yeikiu</a></span><span class="dot">·</span><span data-i18n="footer.made">Designed and built in the Canary Islands</span><span class="sp"></span>
-    <a href="license.html" data-i18n="footer.license">License</a><a href="privacy.html" data-i18n="footer.privacy">Privacy</a><a href="terms.html" data-i18n="footer.terms">Terms</a><a href="mailto:hola@doitpaco.com" data-i18n="footer.contact">hola@doitpaco.com</a></div>
+    <a href="license.html" data-i18n="footer.license">License</a><a href="privacy.html" data-i18n="footer.privacy">Privacy</a><a href="terms.html" data-i18n="footer.terms">Terms</a><a href="mailto:contact@doitpaco.com" data-i18n="footer.contact">contact@doitpaco.com</a></div>
 </div></footer>
 
 <script src="locales/es.js"></script><script src="locales/en.js"></script><script src="i18n.js"></script>
@@ -377,6 +438,19 @@ accent('h1','PACO');accent('tag','Paco');
   if(!('IntersectionObserver' in window)){[].forEach.call(cs,load);return;}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){load(e.target);io.unobserve(e.target);}});},{rootMargin:'200px'});
   [].forEach.call(cs,function(c){io.observe(c);});})();</script>
+<script>// Lista de espera: valida, muestra el bloque de empresa y envía al Google Form por el iframe oculto (sin CORS ni backend).
+(function(){var w=document.getElementById('wl'),f=document.getElementById('wlf'),e=document.getElementById('wl-err'),
+  d=(window.PACO_I18N[document.documentElement.lang]||{}),id=w.getAttribute('data-gform');
+  document.getElementById('wl-lang').value=document.documentElement.lang;
+  f.addEventListener('change',function(){var b=f.querySelector('input[name="entry.1921574103"]:checked');w.classList.toggle('is-biz',!!b&&b.value==='Mi empresa');});
+  f.addEventListener('submit',function(ev){var m=document.getElementById('wl-email');
+    if(!m.value||!m.checkValidity()){ev.preventDefault();e.textContent=d['beta.err_email'];return;}
+    if(!f.querySelector('input[name="entry.1921574103"]:checked')||!f.querySelector('input[name="entry.571314553"]:checked')){ev.preventDefault();e.textContent=d['beta.err_pick'];return;}
+    if(!document.getElementById('wl-ok').checked){ev.preventDefault();e.textContent=d['beta.err_ok'];return;}
+    if(!w.classList.contains('is-biz'))['wl-co','wl-size','wl-role'].forEach(function(i){document.getElementById(i).value='';});
+    e.textContent='';
+    f.action='https://docs.google.com/forms/d/e/'+id+'/formResponse';
+    setTimeout(function(){w.classList.add('sent');},400);});})();</script>
 <script src="animacion.js"></script>
 </body>
 </html>

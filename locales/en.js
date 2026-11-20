@@ -1,6 +1,34 @@
 // doitpaco.com copy — English. Same keys as es.js.
 window.PACO_I18N = window.PACO_I18N || {};
 window.PACO_I18N.en = {
+  "nav.beta": "Beta",
+  "hero.primary": "Join the beta list",
+  "final.cta": "Join the beta list",
+  "beta.title": "Be the first to try it",
+  "beta.sub": "The beta is almost here. Leave your email and we'll let you know the day it opens.",
+  "beta.email": "Email",
+  "beta.email_ph": "you@example.com",
+  "beta.for": "I want it for",
+  "beta.for_me": "Personal use",
+  "beta.for_biz": "My company",
+  "beta.os": "Your computer",
+  "beta.company": "Company",
+  "beta.size": "Team size",
+  "beta.pick": "Choose…",
+  "beta.size_big": "More than 250",
+  "beta.role": "Your role",
+  "beta.optional": "(optional)",
+  "beta.want": "What would you like PACO to do for you?",
+  "beta.src": "How did you hear about us?",
+  "beta.src_other": "Other",
+  "beta.consent": "I agree to be emailed about the PACO beta. I can unsubscribe at any time.",
+  "beta.privacy": "Privacy",
+  "beta.cta": "Notify me",
+  "beta.done": "You're on the list!",
+  "beta.done_sub": "We'll email you the day the beta opens.",
+  "beta.err_email": "Check your email.",
+  "beta.err_pick": "Pick an option in each question.",
+  "beta.err_ok": "Tick the box so we can email you.",
   "meta.title": "PACO — Personal Assistant, Computer Operator",
   "nav.video": "Video",
   "nav.features": "What it does",
@@ -115,5 +143,5 @@ window.PACO_I18N.en = {
   "footer.license": "License",
   "footer.privacy": "Privacy",
   "footer.terms": "Terms",
-  "footer.contact": "hola@doitpaco.com"
+  "footer.contact": "contact@doitpaco.com"
 };
