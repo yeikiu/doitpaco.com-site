@@ -239,6 +239,8 @@
   .wl.sent form{display:none}.wl.sent .done{display:block}
   .wl .err{color:var(--a);margin-top:12px;font-size:14px;min-height:1em}
   @media (max-width:760px){.wl{padding:24px}.wl .row{grid-template-columns:1fr}}
+.biz{display:table;margin:-4px auto 30px;padding:9px 18px;border:1px solid rgba(255,122,89,.35);border-radius:999px;background:rgba(255,122,89,.07);font-size:16px;line-height:1.4;color:#ddd8f5}.biz a{color:var(--accent,#ff7a59);font-weight:700;text-decoration:none;margin-left:4px}.biz a:hover{text-decoration:underline}
+.shows{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1140px;margin:34px auto 0}.show{display:flex;flex-direction:column;background:var(--surf);border:1px solid var(--a-line);border-radius:24px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s,border-color .2s}.show:hover{transform:translateY(-3px);border-color:var(--a)}.shows>.show{min-width:0}.show img{width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;display:block}.show-txt{padding:24px 28px 28px;display:flex;flex-direction:column;gap:10px;flex:1}.show-txt h3{margin:0;font-size:28px}.show-txt p{margin:0;color:var(--mute);line-height:1.55}.show-tag{align-self:flex-start;font-size:12px;font-weight:800;color:var(--a);border:1px solid var(--a-line);border-radius:999px;padding:3px 10px;text-transform:uppercase;letter-spacing:.06em}.show-go{color:var(--a);font-weight:800;margin-top:auto;padding-top:6px}@media(max-width:760px){.shows{grid-template-columns:1fr}.show-txt{padding:22px}}
 </style>
 <link rel="stylesheet" href="mobile.css">
 <link rel="stylesheet" href="animacion.css">
@@ -345,7 +347,28 @@
     <div class="tile w2"><div class="ico">📱</div><h3 data-i18n="f4.title">Your Android phone</h3><p data-i18n="f4.text">Over cable or Wi-Fi: it taps, types, opens apps, calls from your SIM, uses the WhatsApp app and reads your notifications. Only if you give it access.</p></div>
     <div class="tile w2"><div class="ico">⏰</div><h3 data-i18n="f5.title">Remembers and keeps watch</h3><p data-i18n="f5.text">Keeps what you ask it to, sets reminders and reacts when something happens: when you're back at the PC or a WhatsApp comes in.</p></div>
     <div class="tile w3"><div class="ico">📊</div><h3 data-i18n="f6.title">Everything in sight</h3><p data-i18n="f6.text">A panel on your PC and your phone showing what it's doing, what's scheduled and how each task is going.</p></div>
-    <div class="tile w3 hot brainbox"><h3 data-i18n="brain.title">With the AI you already pay for</h3><p data-i18n="brain.text">Your Claude or ChatGPT account, your own API key (Anthropic, OpenAI, GLM…) or local models. Nothing bundled, nothing resold: the code is free and you pay your AI provider directly.</p><p class="note" data-i18n="brain.local">Your memory, reminders and connections are stored on your PC, not on a server of ours.</p></div>
+    <div class="tile w3 hot brainbox"><h3 data-i18n="brain.title">With the AI you already pay for</h3><p data-i18n="brain.text">Your Claude or ChatGPT account, your own API key (Anthropic, OpenAI, GLM…) or local models. Nothing bundled, nothing resold: the code is free for personal use and you pay your AI provider directly.</p><p class="note" data-i18n="brain.local">Your memory, reminders and connections are stored on your PC, not on a server of ours.</p></div>
+  </div>
+</div></section>
+
+<!-- Hecho con PACO: proyectos reales construidos con PACO (enlaces cruzados aprobados por JQ). -->
+<section id="built"><div class="wrap">
+  <div class="center"><h2 data-i18n="built.title">Built with PACO</h2><p class="lead" data-i18n="built.sub">Real projects made by talking to PACO.</p></div>
+  <div class="shows">
+  <a class="show" href="https://tinyheadlines.live" target="_blank" rel="noopener">
+    <img src="assets/showcase/tinyheadlines.jpg" alt="Tiny Headlines" loading="lazy" width="1280" height="720">
+    <div class="show-txt"><span class="show-tag" data-i18n="built.tag">Live 24/7</span>
+      <h3>Tiny Headlines</h3>
+      <p data-i18n="built.th">Today's real news, rebuilt as tiny 3D dioramas on a live channel that never stops. Sources on screen; the chat votes the next story.</p>
+      <span class="show-go">tinyheadlines.live →</span></div>
+  </a>
+  <a class="show" href="https://fight-radar.com" target="_blank" rel="noopener">
+    <img src="assets/showcase/fight-radar.jpg" alt="Fight-Radar" loading="lazy" width="1280" height="720">
+    <div class="show-txt"><span class="show-tag" data-i18n="built.fr_tag">UFC analytics</span>
+      <h3>Fight-Radar</h3>
+      <p data-i18n="built.fr">Fighter stats and fight previews for every UFC card. Pick who wins each fight, compete against its prediction model and climb the leaderboard.</p>
+      <span class="show-go">fight-radar.com →</span></div>
+  </a>
   </div>
 </div></section>
 
@@ -353,7 +376,7 @@
 <section id="beta"><div class="wrap">
   <div class="center"><h2 data-i18n="beta.title">Be the first to try it</h2><p class="lead" data-i18n="beta.sub">The beta is almost here. Leave your email and we'll let you know the day it opens.</p></div>
   <div class="wl" id="wl" data-gform="1FAIpQLScywiFZkGn81nySdoyY_Z5V83rZpZWSXGdHYbaCRarA0JAcbA">
-    <form id="wlf" method="POST" target="wl-sink" novalidate>
+    <form id="wlf" method="POST" target="wl-sink" novalidate action="https://docs.google.com/forms/d/e/1FAIpQLScywiFZkGn81nySdoyY_Z5V83rZpZWSXGdHYbaCRarA0JAcbA/formResponse">
       <label for="wl-email" data-i18n="beta.email">Email</label>
       <input id="wl-email" type="email" name="entry.88119851" required autocomplete="email" data-i18n-ph="beta.email_ph" placeholder="you@example.com">
       <label data-i18n="beta.for">I want it for</label>
@@ -392,14 +415,15 @@
   <div class="bento">
     <div class="tile w3"><div class="ico">⏱️</div><h3 data-i18n="consult.b30.title">30 min · €90</h3><p data-i18n="consult.b30.text">For a specific question or a quick fix. Paid when you book.</p><a class="cta" href="https://cal.com/jqdevai/30min" target="_blank" rel="noopener" data-i18n="consult.b30.cta">Book 30 min</a></div>
     <div class="tile w3 hot"><span class="badge" data-i18n="consult.b50.badge">Recommended for a first session</span><h3 data-i18n="consult.b50.title">50 min · €150</h3><p data-i18n="consult.b50.text">To install PACO together or build your first automation. Paid when you book.</p><a class="cta" href="https://cal.com/jqdevai/50min" target="_blank" rel="noopener" data-i18n="consult.b50.cta">Book 50 min</a></div>
-    <div class="tile w4"><h3 data-i18n="consult.req.title">If it's for PACO, you need</h3><ul class="req"><li data-i18n="consult.req.1">A Windows 10 or 11 PC (64-bit)</li><li data-i18n="consult.req.2">An Android phone</li><li data-i18n="consult.req.3">An active subscription to a supported AI provider (Anthropic, OpenAI, GLM or others)</li></ul></div>
+    <div class="tile w4"><h3 data-i18n="consult.req.title">If it's for PACO, you need</h3><ul class="req"><li data-i18n="consult.req.1">A Windows, macOS or Linux computer</li><li data-i18n="consult.req.2">An Android phone</li><li data-i18n="consult.req.3">An active subscription to a supported AI provider (Anthropic, OpenAI, GLM or others)</li></ul></div>
     <div class="tile w2"><p data-i18n="consult.fine">You pay for the time, not an outcome: if you need more help later, book another block.</p><p class="note" data-i18n="consult.hours">Weekday evenings and weekends (European time).</p><a class="more" href="https://cal.com/jqdevai" target="_blank" rel="noopener" data-i18n="consult.all">See all times</a></div>
   </div>
 </div></section>
 
 <section class="final"><div class="wrap">
   <h2 data-i18n="final.title">Stop clicking. Just say it.</h2>
-    <p class="lead" data-i18n="final.note">PACO is free. Beta for Windows 10 and 11 (64-bit).</p>
+    <p class="lead" data-i18n="final.note">PACO is free for personal use. For Windows, macOS and Linux.</p>
+    <p class="biz"><span data-i18n="final.biz">For your business? PACO needs a commercial license, with optional maintenance.</span> <a href="license.html" data-i18n="final.biz_link">See the license</a></p>
     <a class="cta" href="#beta" data-i18n="final.cta">Join the beta list</a>
 </div></section>
 
