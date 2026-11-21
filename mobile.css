@@ -67,6 +67,7 @@
   .final{padding:80px 0}
   .final h2{font-size:clamp(38px,8vw,60px)}
   .final .cta,.fbrand .cta{max-width:100%;min-height:44px;padding:16px 18px}
+  .final-ctas{flex-direction:column;align-items:stretch;max-width:420px;margin-left:auto;margin-right:auto}.final-ctas a{justify-content:center}
   footer{padding:48px 0 28px}
   .fbrand{gap:24px;padding-bottom:28px}
   .fbrand>div{min-width:0;max-width:100%}

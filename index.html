@@ -239,7 +239,7 @@
   .wl.sent form{display:none}.wl.sent .done{display:block}
   .wl .err{color:var(--a);margin-top:12px;font-size:14px;min-height:1em}
   @media (max-width:760px){.wl{padding:24px}.wl .row{grid-template-columns:1fr}}
-.biz{display:table;margin:-4px auto 30px;padding:9px 18px;border:1px solid rgba(255,122,89,.35);border-radius:999px;background:rgba(255,122,89,.07);font-size:16px;line-height:1.4;color:#ddd8f5}.biz a{color:var(--accent,#ff7a59);font-weight:700;text-decoration:none;margin-left:4px}.biz a:hover{text-decoration:underline}
+.final .lead{margin-top:22px}.final-ctas{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:40px}.final .final-ctas .cta{margin-top:0}.biz-cta{display:inline-flex;align-items:center;font-weight:600;font-size:18px;text-decoration:none;transition:color .15s,border-color .15s}
 .shows{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1140px;margin:34px auto 0}.show{display:flex;flex-direction:column;background:var(--surf);border:1px solid var(--a-line);border-radius:24px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s,border-color .2s}.show:hover{transform:translateY(-3px);border-color:var(--a)}.shows>.show{min-width:0}.show img{width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;display:block}.show-txt{padding:24px 28px 28px;display:flex;flex-direction:column;gap:10px;flex:1}.show-txt h3{margin:0;font-size:28px}.show-txt p{margin:0;color:var(--mute);line-height:1.55}.show-tag{align-self:flex-start;font-size:12px;font-weight:800;color:var(--a);border:1px solid var(--a-line);border-radius:999px;padding:3px 10px;text-transform:uppercase;letter-spacing:.06em}.show-go{color:var(--a);font-weight:800;margin-top:auto;padding-top:6px}@media(max-width:760px){.shows{grid-template-columns:1fr}.show-txt{padding:22px}}
 </style>
 <link rel="stylesheet" href="mobile.css">
@@ -423,8 +423,7 @@
 <section class="final"><div class="wrap">
   <h2 data-i18n="final.title">Stop clicking. Just say it.</h2>
     <p class="lead" data-i18n="final.note">PACO is free for personal use. For Windows, macOS and Linux.</p>
-    <p class="biz"><span data-i18n="final.biz">For your business? PACO needs a commercial license, with optional maintenance.</span> <a href="license.html" data-i18n="final.biz_link">See the license</a></p>
-    <a class="cta" href="#beta" data-i18n="final.cta">Join the beta list</a>
+    <div class="final-ctas"><a class="cta" href="#beta" data-i18n="final.cta">Join the beta list</a><a class="ghost biz-cta" href="license.html" data-i18n="final.biz_link">Commercial license for teams →</a></div>
 </div></section>
 
 <footer><div class="wrap">
