@@ -192,6 +192,8 @@
   .t3d h3{font-size:clamp(26px,2.6vw,36px)}
   .t3d .try{display:inline-block;margin-top:18px;padding:10px 16px;border-radius:999px;background:var(--glass);border:1px solid var(--a-line);font-size:15px}
   @media (max-width:760px){.w6{grid-column:auto}.t3d{grid-template-columns:1fr;gap:22px}}
+  .show-vid{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--bg)}
+  @media (prefers-reduced-motion:reduce){.show-vid{animation:none}}
   .brow{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center;margin-top:90px}
   .brow:nth-child(even) .btxt{order:2}
   .btxt .n{font-size:15px;font-weight:700;color:var(--a);letter-spacing:.08em}
@@ -484,17 +486,17 @@
 
 <!-- Hecho con PACO: proyectos reales construidos con PACO (enlaces cruzados aprobados por JQ). -->
 <section id="built"><div class="wrap">
-  <div class="center"><h2 data-i18n="built.title">Built with PACO</h2><p class="lead" data-i18n="built.sub">Real projects made by talking to PACO.</p></div>
+  <div class="center"><h2 data-i18n="built.title">PACO runs these on its own</h2><p class="lead" data-i18n="built.sub">Real projects, live right now, built by talking to PACO.</p></div>
   <div class="shows">
   <a class="show" href="https://tinyheadlines.live" target="_blank" rel="noopener">
-    <img src="assets/showcase/tinyheadlines.jpg" alt="Tiny Headlines" loading="lazy" width="1280" height="720">
+    <video class="show-vid" src="assets/showcase/tinyheadlines-loop.mp4" poster="assets/showcase/tinyheadlines.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Tiny Headlines" width="1280" height="720"></video>
     <div class="show-txt"><span class="show-tag" data-i18n="built.tag">Live 24/7</span>
       <h3>Tiny Headlines</h3>
       <p data-i18n="built.th">Today's real news, rebuilt as tiny 3D dioramas on a live channel that never stops. Sources on screen; the chat votes the next story.</p>
       <span class="show-go">tinyheadlines.live →</span></div>
   </a>
   <a class="show" href="https://fight-radar.com" target="_blank" rel="noopener">
-    <img src="assets/showcase/fight-radar.jpg" alt="Fight-Radar" loading="lazy" width="1280" height="720">
+    <video class="show-vid" src="assets/showcase/fight-radar-loop.mp4" poster="assets/showcase/fight-radar.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Fight-Radar" width="1280" height="720"></video>
     <div class="show-txt"><span class="show-tag" data-i18n="built.fr_tag">UFC analytics</span>
       <h3>Fight-Radar</h3>
       <p data-i18n="built.fr">Fighter stats and fight previews for every UFC card. Pick who wins each fight, compete against its prediction model and climb the leaderboard.</p>

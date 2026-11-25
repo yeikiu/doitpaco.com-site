@@ -3,6 +3,7 @@
    Si el visitante pide menos movimiento o el navegador no tiene IntersectionObserver, no toca nada. */
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) document.querySelectorAll('video.show-vid').forEach(function(v){ v.removeAttribute('autoplay'); v.pause(); });
   if (reduce || !('IntersectionObserver' in window)) return;
 
   var SEL = '#video .film, #unique .brow, #features .tile, #built .wrap > *, #beta .wrap > *, #consulting .tile, .final h2, .final .final-ctas';
