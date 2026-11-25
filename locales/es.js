@@ -110,6 +110,9 @@ window.PACO_I18N.es = {
   ],
 
   "demo.order": "Paco, busca la factura de la luz de septiembre y mándasela a la gestoría por email",
+  "demo.folder": "Facturas",
+  "demo.send": "Enviar",
+  "demo.sent": "Enviado",
   "demo.step1": "Busco la factura de septiembre",
   "demo.step2": "Localizo el email de tu gestoría",
   "demo.step3": "Adjunto la factura y envío el correo",

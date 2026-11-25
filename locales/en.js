@@ -108,6 +108,9 @@ window.PACO_I18N.en = {
   ],
 
   "demo.order": "Paco, find September's electricity bill and email it to my accountant",
+  "demo.folder": "Invoices",
+  "demo.send": "Send",
+  "demo.sent": "Sent",
   "demo.step1": "Finding September's electricity bill",
   "demo.step2": "Finding your accountant's email address",
   "demo.step3": "Attaching the bill and sending the email",
