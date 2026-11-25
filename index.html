@@ -104,6 +104,57 @@
   .film.on .play{display:none}
   .vnote{text-align:center;color:var(--mute);font-size:14px;margin-top:16px}
   /* LO MEJOR: tres funciones grandes, texto a un lado y clip al otro. Hasta que llega el clip se ve una maqueta. */
+  /* --- Lo que solo hace PACO (#unique) --- */
+  #unique{position:relative}
+  #unique:before{content:"";position:absolute;left:50%;top:120px;width:900px;height:900px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,122,89,.10),transparent);pointer-events:none}
+  .kick{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--a);padding:7px 14px;border:1px solid var(--a-line);border-radius:999px;margin-bottom:18px}
+  .ustage{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 90% at 50% 0%,#1d1840,var(--surf))}
+  .ucall{display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+  .uph{width:min(58%,300px);aspect-ratio:9/15;border-radius:30px;border:1px solid var(--gl);background:linear-gradient(180deg,#191536,#0f0c24);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:18px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+  .uring{position:relative;width:74px;height:74px;margin-bottom:8px}
+  .uring b{position:absolute;inset:0;border-radius:50%;background:var(--a);color:#1a1030;display:flex;align-items:center;justify-content:center;padding:18px}
+  .uring b svg{width:100%;height:100%}
+  .uring i{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--a);animation:uRing 2.2s ease-out infinite}
+  .uring i:nth-child(2){animation-delay:.7s}.uring i:nth-child(3){animation-delay:1.4s}
+  .uwho{font-weight:700;font-size:clamp(17px,1.6vw,21px)}
+  .uwhy{color:var(--mute);font-size:13px;line-height:1.4;max-width:220px}
+  .ubtns{display:flex;gap:14px;margin-top:14px}
+  .ubtns span{font-size:13px;padding:9px 16px;border-radius:999px;border:1px solid var(--gl)}
+  .ubtns .yes{background:var(--a);color:#1a1030;border-color:var(--a);font-weight:700;animation:uPulse 2.2s ease-in-out infinite}
+  .upeer{position:relative;width:86%;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:0}
+  .unode{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:16px;background:var(--bg);border:1px solid var(--gl);font-size:clamp(14px,1.3vw,17px);white-space:nowrap}
+  .dotlive{width:9px;height:9px;border-radius:50%;background:var(--a);box-shadow:0 0 0 4px var(--a-soft);animation:icoDot 2s ease-in-out infinite}
+  .uname{display:flex;flex-direction:column;line-height:1.15}.uname b{font-size:clamp(17px,1.6vw,22px)}.uname small{font-size:11px;color:var(--mute);letter-spacing:.04em;text-transform:uppercase;margin-top:3px}
+  .ulink{position:relative;height:20px;margin:0 -1px}
+  .ulink svg{width:100%;height:100%;display:block}.ulink path{stroke:var(--a-line);stroke-width:1.5;stroke-dasharray:4 6;fill:none;animation:uDash 1s linear infinite}
+  .pk{position:absolute;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--a);box-shadow:0 0 14px var(--a)}
+  .pk.a{animation:uGo 6s ease-in-out infinite}.pk.b{animation:uBack 6s ease-in-out infinite;opacity:0}
+  .umsg{position:absolute;font-size:clamp(12px,1.1vw,14px);padding:10px 14px;border-radius:14px;background:var(--glass);border:1px solid var(--gl);max-width:46%;opacity:0}
+  .umsg.m1{left:0;top:-70px;animation:uM1 6s ease-in-out infinite}
+  .umsg.m2{right:0;bottom:-70px;border-color:var(--a-line);animation:uM2 6s ease-in-out infinite}
+  .uself{width:84%;display:flex;flex-direction:column;gap:12px}
+  .ufile{font-size:13px;color:var(--mute);letter-spacing:.02em}
+  .udiff{margin:0;padding:16px 18px;border-radius:14px;background:var(--bg);border:1px solid var(--gl);font:13px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;display:flex;flex-direction:column;overflow:hidden}
+  .udiff .l{white-space:pre;color:var(--mute)}
+  .udiff .add{color:var(--ink);background:var(--a-soft);box-shadow:inset 2px 0 0 var(--a);clip-path:inset(0 100% 0 0);animation:uType 7s steps(30) infinite}
+  .udiff .add+.add{animation-delay:.6s}
+  .uok,.uback{display:flex;align-items:center;gap:10px;font-size:14px;opacity:0}
+  .uok{animation:uStep 7s ease infinite;animation-delay:2.4s}
+  .uback{color:var(--mute);animation:uStep 7s ease infinite;animation-delay:3.6s}
+  .chk{width:18px;height:18px;border-radius:50%;background:var(--a);position:relative}.chk:after{content:"";position:absolute;left:6px;top:3px;width:4px;height:8px;border:solid #1a1030;border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .spin{width:16px;height:16px;border-radius:50%;border:2px solid var(--a-line);border-top-color:var(--a);animation:uSpin 1s linear infinite}
+  @keyframes uRing{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.1);opacity:0}}
+  @keyframes uPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,122,89,.5)}50%{box-shadow:0 0 0 10px rgba(255,122,89,0)}}
+  @keyframes uDash{to{stroke-dashoffset:-20}}
+  @keyframes uGo{0%{left:0;opacity:0}8%{opacity:1}40%{left:calc(100% - 10px);opacity:1}45%,100%{left:calc(100% - 10px);opacity:0}}
+  @keyframes uBack{0%,50%{left:calc(100% - 10px);opacity:0}58%{opacity:1}90%{left:0;opacity:1}95%,100%{left:0;opacity:0}}
+  @keyframes uM1{0%,4%{opacity:0;transform:translateY(6px)}10%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
+  @keyframes uM2{0%,55%{opacity:0;transform:translateY(-6px)}62%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
+  @keyframes uType{0%,8%{clip-path:inset(0 100% 0 0)}30%,90%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 0)}}
+  @keyframes uStep{0%,20%{opacity:0;transform:translateY(4px)}28%,88%{opacity:1;transform:none}100%{opacity:0}}
+  @keyframes uSpin{to{transform:rotate(360deg)}}
+  @media (max-width:760px){.upeer{width:94%}.unode{padding:10px 12px}.umsg{max-width:70%}.umsg.m1{top:-62px}.umsg.m2{bottom:-62px}}
+  @media (prefers-reduced-motion:reduce){#unique *{animation:none!important}.umsg,.uok,.uback{opacity:1}.udiff .add{clip-path:none}}
   .brow{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center;margin-top:90px}
   .brow:nth-child(even) .btxt{order:2}
   .btxt .n{font-size:15px;font-weight:700;color:var(--a);letter-spacing:.08em}
@@ -262,7 +313,7 @@
 <div class="aurora"></div>
 <nav><div class="wrap">
   <a class="logo" href="#" aria-label="PACO"><img src="assets/brand/paco-logo-on-dark.svg" alt="PACO"></a><span class="sp"></span>
-  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#beta" data-i18n="nav.beta">Beta</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
+  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#unique" data-i18n="nav.unique">Only PACO</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#beta" data-i18n="nav.beta">Beta</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
   <a class="l" data-i18n="nav.lang" href="?lang=es" data-i18n-href="nav.lang_href">Español</a>
 </div></nav>
 
@@ -312,6 +363,39 @@
     <button class="play" type="button"><span>▶</span></button>
   </div>
   <p class="vnote" data-i18n="video.note">Real product, made-up data.</p>
+</div></section>
+
+<section id="unique"><div class="wrap">
+  <div class="center"><div class="kick" data-i18n="u.kicker">Only PACO</div><h2 data-i18n="u.title">What no other assistant does</h2><p class="lead" data-i18n="u.sub">What we are showing these days, exactly as it works today.</p></div>
+  <div class="brows">
+    <div class="brow urow">
+      <div class="btxt"><div class="n">01</div><h3 data-i18n="u1.title">It calls you when it matters</h3><p data-i18n="u1.text">Tell it “if the bank emails me, call me”. When the email lands, your phone rings with a call from PACO and it tells you out loud. Everything else can wait.</p><span class="try" data-i18n="u1.try">“Paco, if the bank emails me, call me”</span></div>
+      <div class="clip ustage"><div class="ucall">
+        <div class="uph"><div class="uring"><i></i><i></i><i></i><b><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 13v6M11 9v14M16 5v22M21 10v12M26 14v4"/></svg></b></div>
+          <div class="uwho" data-i18n="u1.call">PACO is calling</div><div class="uwhy" data-i18n="u1.why">Email from the bank: charge waiting for approval</div>
+          <div class="ubtns"><span class="no" data-i18n="u1.no">Decline</span><span class="yes" data-i18n="u1.yes">Answer</span></div></div>
+      </div></div>
+    </div>
+    <div class="brow urow">
+      <div class="btxt"><div class="n">02</div><h3 data-i18n="u2.title">It talks to other PACOs</h3><p data-i18n="u2.text">Everyone names their PACO whatever they like, but they all speak the same language. Your assistant finds the ones at home or on your team, on your network or remotely over a VPN, and messages them. Each one checks with its owner before agreeing to anything.</p><span class="try" data-i18n="u2.try">“Sam, ask Lola if Friday works for Ana”</span></div>
+      <div class="clip ustage"><div class="upeer">
+        <div class="unode"><span class="dotlive"></span><span class="uname"><b data-i18n="u2.me">Sam</b><small data-i18n="u2.me_of">Leo’s PACO</small></span></div>
+        <div class="ulink"><svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M0 10H200"/></svg><i class="pk a"></i><i class="pk b"></i></div>
+        <div class="unode"><span class="dotlive"></span><span class="uname"><b data-i18n="u2.other">Lola</b><small data-i18n="u2.other_of">Ana’s PACO</small></span></div>
+        <div class="umsg m1" data-i18n="u2.msg1">Sam: Does Friday at 8 pm work for Ana?</div>
+        <div class="umsg m2" data-i18n="u2.msg2">Lola: Let me ask her… Yes, that works.</div>
+      </div></div>
+    </div>
+    <div class="brow urow">
+      <div class="btxt"><div class="n">03</div><h3 data-i18n="u3.title">It improves itself</h3><p data-i18n="u3.text">Ask for something it can’t do yet. It writes the change into its own code, shows it to you and, once you approve it, restarts without losing what it was working on.</p><span class="try" data-i18n="u3.try">“Paco, learn to ping me on my watch”</span></div>
+      <div class="clip ustage"><div class="uself">
+        <div class="ufile" data-i18n="u3.file">watch_alert.py · proposed change</div>
+        <pre class="udiff"><span class="l">def avisar(texto):</span><span class="l add">+   movil.notificar(texto)</span><span class="l add">+   reloj.vibrar(patron="corto")</span><span class="l">    return True</span></pre>
+        <div class="uok"><span class="chk"></span><span data-i18n="u3.ok">You approve it</span></div>
+        <div class="uback"><span class="spin"></span><span data-i18n="u3.back">Restarted. Picking up where I left off.</span></div>
+      </div></div>
+    </div>
+  </div>
 </div></section>
 
 <section id="best"><div class="wrap">
