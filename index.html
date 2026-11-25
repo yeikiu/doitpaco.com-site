@@ -187,6 +187,11 @@
   @keyframes uSpin{to{transform:rotate(360deg)}}
   @media (max-width:760px){.upeer{width:94%}.unode{padding:10px 12px}.umsg{max-width:70%}.umsg.m1{top:-62px}.umsg.m2{bottom:-62px}}
   @media (prefers-reduced-motion:reduce){#unique *{animation:none!important}.umsg,.uok,.uback{opacity:1}.udiff .add{clip-path:none}}
+  .w6{grid-column:span 6}
+  .t3d{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;align-items:center}
+  .t3d h3{font-size:clamp(26px,2.6vw,36px)}
+  .t3d .try{display:inline-block;margin-top:18px;padding:10px 16px;border-radius:999px;background:var(--glass);border:1px solid var(--a-line);font-size:15px}
+  @media (max-width:760px){.w6{grid-column:auto}.t3d{grid-template-columns:1fr;gap:22px}}
   .brow{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center;margin-top:90px}
   .brow:nth-child(even) .btxt{order:2}
   .btxt .n{font-size:15px;font-weight:700;color:var(--a);letter-spacing:.08em}
@@ -366,7 +371,7 @@
 <div class="aurora"></div>
 <nav><div class="wrap">
   <a class="logo" href="#" aria-label="PACO"><img src="assets/brand/paco-logo-on-dark.svg" alt="PACO"></a><span class="sp"></span>
-  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#unique" data-i18n="nav.unique">Only PACO</a><a class="l" href="#best" data-i18n="nav.best">Highlights</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#beta" data-i18n="nav.beta">Beta</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
+  <a class="l" href="#video" data-i18n="nav.video">Video</a><a class="l" href="#unique" data-i18n="nav.unique">Only PACO</a><a class="l" href="#features" data-i18n="nav.features">What it does</a><a class="l" href="#beta" data-i18n="nav.beta">Beta</a><a class="l" href="#consulting" data-i18n="nav.consult">Consulting</a>
   <a class="l" data-i18n="nav.lang" href="?lang=es" data-i18n-href="nav.lang_href">Español</a>
 </div></nav>
 
@@ -459,42 +464,6 @@
   </div>
 </div></section>
 
-<section id="best"><div class="wrap">
-  <div class="center"><h2 data-i18n="best.title">The best of PACO</h2><p class="lead" data-i18n="best.sub">What makes it yours.</p></div>
-  <div class="brows">
-    <div class="brow">
-      <div class="btxt"><div class="n">01</div><h3 data-i18n="b1.title">Give it any name you like</h3><p data-i18n="b1.text">PACO is just the name it comes with. Call it Sam, Lola or whatever you like: it wakes up when you say that name, answers to it and signs its messages with it.</p><span class="try" data-i18n="b1.try">Settings → Name: Sam</span></div>
-      <div class="clip" data-src="assets/video/clip-nombre.mp4">
-        <div class="mk"><div class="f"><small data-i18n="m1.label">Assistant name</small><b data-i18n="m1.value">Sam</b></div>
-          <div class="wk" data-i18n="m1.wake">Wakes up when it hears “Sam”</div>
-          <div class="me"><div class="wave"><span></span><span></span><span></span><span></span></div><span data-i18n="m1.you">Sam…</span></div>
-          <div class="paco"><i></i><p data-i18n="m1.reply">Yes?</p></div></div>
-      </div>
-    </div>
-    <div class="brow">
-      <div class="btxt"><div class="n">02</div><h3 data-i18n="b2.title">Talk to it. No keyboard.</h3><p data-i18n="b2.text">Call it by its name and ask for things the way you would ask a person. It understands you even if you ramble, you can cut it off mid-sentence, and it talks back out loud while it works.</p><span class="try" data-i18n="b2.try">“Paco, what have I got tomorrow?”</span></div>
-      <div class="clip" data-src="assets/video/clip-voz.mp4">
-        <div class="mk"><div class="me"><div class="wave"><span></span><span></span><span></span><span></span><span></span></div><span data-i18n="m2.you">Paco, what have I got tomorrow?</span></div>
-          <div class="paco"><i></i><p data-i18n="m2.reply">Dentist at 10. I'll remind you at 9.</p></div></div>
-      </div>
-    </div>
-    <div class="brow">
-      <div class="btxt"><div class="n">03</div><h3 data-i18n="b3.title">A 3D space for every topic</h3><p data-i18n="b3.text">For each matter it builds you a virtual room: the trip, the renovation, your yoga routine. It stays saved, and you can reopen it whenever you want with everything where you left it.</p><span class="try" data-i18n="b3.try">“Paco, open my yoga room”</span></div>
-      <div class="clip" data-src="assets/video/clip-3d.mp4">
-        <div class="mk room"><div class="tabs" data-i18n-list="m3.rooms"><template><span></span></template></div>
-          <div class="floor"></div><div class="obj o1"></div><div class="obj o2"></div><div class="obj o3"></div>
-          <div class="saved" data-i18n="m3.saved">Room saved</div></div>
-      </div>
-    </div>
-    <div class="brow">
-      <div class="btxt"><div class="n">04</div><h3 data-i18n="b4.title">It gets ahead of you</h3><p data-i18n="b4.text">It doesn't wait to be asked. If you told it to remind you, it does: the dentist, tomorrow's appointment or the WhatsApp you were waiting for, right on time and only what matters.</p><span class="try" data-i18n="b4.try">“Paco, remind me the day before”</span></div>
-      <div class="clip" data-src="assets/video/clip-adelanta.mp4">
-        <div class="mk"><div class="paco"><i></i><p data-i18n="m4.reply">Dentist tomorrow at 10. Shall I remind you at 9?</p></div></div>
-      </div>
-    </div>
-  </div>
-</div></section>
-
 <section id="features"><div class="wrap">
   <div class="center"><h2 data-i18n="features.title">What PACO does</h2><p class="lead" data-i18n="features.sub">What it already does today.</p></div>
   <div class="bento">
@@ -505,6 +474,11 @@
     <div class="tile w2"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24z"/><path pathLength="1" d="M16 9v7l4.5 3"/><circle class="dot" cx="25" cy="7" r="2" fill="currentColor" stroke="none"/></svg></div><h3 data-i18n="f5.title">Remembers and keeps watch</h3><p data-i18n="f5.text">Keeps what you ask it to, sets reminders and reacts when something happens: when you're back at the PC or a WhatsApp comes in.</p></div>
     <div class="tile w3"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M4 9h16"/><path pathLength="1" d="M4 16h20"/><path pathLength="1" d="M4 23h12"/><circle cx="26" cy="9" r="1.8" fill="currentColor" stroke="none"/><circle class="dot" cx="28" cy="16" r="1.8" fill="currentColor" stroke="none"/><circle cx="20" cy="23" r="1.8" fill="currentColor" stroke="none" opacity=".45"/></svg></div><h3 data-i18n="f6.title">Everything in sight</h3><p data-i18n="f6.text">A panel on your PC and your phone showing what it's doing, what's scheduled and how each task is going.</p></div>
     <div class="tile w3 hot brainbox"><h3 data-i18n="brain.title">With the AI you already pay for</h3><p data-i18n="brain.text">Your Claude or ChatGPT account, your own API key (Anthropic, OpenAI, GLM…) or local models. Nothing bundled, nothing resold: the code is free for personal use and you pay your AI provider directly.</p><p class="note" data-i18n="brain.local">Your memory, reminders and connections are stored on your PC, not on a server of ours.</p></div>
+    <div class="tile w6 hot t3d" id="sala3d"><div class="t3d-txt"><h3 data-i18n="b3.title">A 3D space for every topic</h3><p data-i18n="b3.text">For each matter it builds you a virtual room: the trip, the renovation, your yoga routine. It stays saved, and you can reopen it whenever you want with everything where you left it.</p><span class="try" data-i18n="b3.try">“Paco, open my yoga room”</span></div><div class="clip" data-src="assets/video/clip-3d.mp4">
+        <div class="mk room"><div class="tabs" data-i18n-list="m3.rooms"><template><span></span></template></div>
+          <div class="floor"></div><div class="obj o1"></div><div class="obj o2"></div><div class="obj o3"></div>
+          <div class="saved" data-i18n="m3.saved">Room saved</div></div>
+      </div></div>
   </div>
 </div></section>
 
