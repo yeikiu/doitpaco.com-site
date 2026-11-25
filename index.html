@@ -271,6 +271,27 @@
   .tile ul.req li{padding-left:22px;position:relative;margin:6px 0}
   .tile ul.req li:before{content:"\2713";position:absolute;left:0;color:var(--a)}
   .tile a.more{color:var(--a);font-weight:700;display:inline-block;margin-top:14px}
+  /* --- Cambio 4: cierre dictado --- */
+  .final:before{content:"";position:absolute;inset:0;background:url(assets/brand/paco-symbol-on-dark.svg) center 46%/min(620px,80vw) no-repeat;opacity:.045;pointer-events:none}
+  .fwave{display:flex;justify-content:center;align-items:center;gap:7px;height:64px;margin-bottom:26px}
+  .fwave span{width:5px;height:100%;border-radius:3px;background:var(--a);transform:scaleY(.18);animation:fWave 1.3s ease-in-out infinite}
+  .fwave span:nth-child(odd){animation-duration:1.05s}.fwave span:nth-child(3n){animation-duration:1.6s}
+  .fwave span:nth-child(2){animation-delay:.1s}.fwave span:nth-child(3){animation-delay:.2s}.fwave span:nth-child(4){animation-delay:.3s}.fwave span:nth-child(5){animation-delay:.4s}.fwave span:nth-child(6){animation-delay:.5s}.fwave span:nth-child(7){animation-delay:.4s}.fwave span:nth-child(8){animation-delay:.3s}.fwave span:nth-child(9){animation-delay:.2s}.fwave span:nth-child(10){animation-delay:.1s}
+  .final h2.rv{opacity:1;transform:none;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 60%);mask-image:linear-gradient(90deg,#000 40%,transparent 60%);-webkit-mask-size:260% 100%;mask-size:260% 100%;-webkit-mask-position:100% 0;mask-position:100% 0}
+  .final h2.in{-webkit-mask-position:0 0;mask-position:0 0;transition:-webkit-mask-position 2.2s cubic-bezier(.5,0,.2,1) .3s,mask-position 2.2s cubic-bezier(.5,0,.2,1) .3s}
+  @media (max-width:760px){.fcta{width:100%}.fcta .cta{width:100%;justify-content:center}}
+  .fcta{position:relative;display:inline-flex}
+  .fcur{position:absolute;left:72%;top:58%;width:30px;height:30px;opacity:0;transform:translate(46vw,36vh);pointer-events:none;z-index:3;filter:drop-shadow(0 4px 8px rgba(0,0,0,.5))}
+  .fcur svg{width:30px;height:30px;display:block}
+  .fcur i{position:absolute;left:-12px;top:-12px;width:28px;height:28px;border-radius:50%;border:2px solid var(--a);opacity:0}
+  .final-ctas.in .fcur{animation:fCur 2.2s cubic-bezier(.45,0,.2,1) 1.6s forwards}
+  .final-ctas.in .fcur i{animation:fClk .7s ease-out 3.8s forwards}
+  .final-ctas.in .fcta .cta{animation:fGlow 2.6s ease-in-out 3.8s infinite}
+  @keyframes fWave{0%,100%{transform:scaleY(.18)}50%{transform:scaleY(1)}}
+  @keyframes fCur{0%{opacity:0;transform:translate(46vw,36vh)}15%{opacity:1}100%{opacity:1;transform:none}}
+  @keyframes fClk{0%{opacity:1;transform:scale(.4)}100%{opacity:0;transform:scale(1.6)}}
+  @keyframes fGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,122,89,.55)}50%{box-shadow:0 0 0 14px rgba(255,122,89,0)}}
+  @media (prefers-reduced-motion:reduce){.fwave span{animation:none;transform:scaleY(.6)}.fcur{display:none}}
   .final{text-align:center;padding:140px 0;position:relative;overflow:hidden}
   .final:before{content:"";position:absolute;inset:20% 15%;background:radial-gradient(50% 50% at 50% 50%,rgba(255,122,89,.18),transparent 70%);filter:blur(30px);z-index:-1}
   .final h2{font-size:clamp(46px,7vw,100px)}
@@ -556,10 +577,11 @@
   </div>
 </div></section>
 
-<section class="final"><div class="wrap">
+<section class="final" id="cierre"><div class="wrap">
+  <div class="fwave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
   <h2 data-i18n="final.title">Stop clicking. Just say it.</h2>
     <p class="lead" data-i18n="final.note">PACO is free for personal use. For Windows, macOS and Linux.</p>
-    <div class="final-ctas"><a class="cta" href="#beta" data-i18n="final.cta">Join the beta list</a><a class="ghost biz-cta" href="license.html" data-i18n="final.biz_link">Commercial license for teams →</a></div>
+    <div class="final-ctas"><span class="fcta"><a class="cta" href="#beta" data-i18n="final.cta">Join the beta list</a><span class="fcur" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 2.5v17.2l4.6-4.4 3.1 6.9 2.9-1.3-3.1-6.8h6.4z" fill="var(--a)" stroke="#1a1030" stroke-width="1.3" stroke-linejoin="round"/></svg><i></i></span></span><a class="ghost biz-cta" href="license.html" data-i18n="final.biz_link">Commercial license for teams →</a></div>
 </div></section>
 
 <footer><div class="wrap">
